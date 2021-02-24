@@ -4,6 +4,7 @@
   "version": "0.2.0",
   "author": "Richard Foster",
   "license": "MIT",
+  "repository": "dayjur/coffeebeans",
   "dependencies": {
     "ejs": "^3.1.6",
     "formidable": "^1.2.2",
