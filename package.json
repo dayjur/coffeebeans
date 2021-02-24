@@ -1,0 +1,24 @@
+{
+  "name": "coffeebeans",
+  "description": "Simple fast and easy to use web framework for node.js",
+  "version": "0.2.0",
+  "author": "Richard Foster",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "formidable": "^1.2.2",
+    "finalhandler": "^1.1.2",
+    "pug": "^3.0.0",
+    "router": "^1.3.5",
+    "serve-static": "^1.14.1"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "lib/"
+  ]
+}
