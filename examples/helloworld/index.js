@@ -4,7 +4,7 @@ var routes=app.router; // get the router
 
 // semd 'Hello World' to browser localhost:3000/ 
 routes.get('/', (req, res) => {
-    app.response.sendText('Hello World!');
+    app.sendText('Hello World!');
     });
 
 
