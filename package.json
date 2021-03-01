@@ -1,8 +1,8 @@
 {
   "name": "coffeebeans",
   "description": "Simple fast and easy to use web framework for node.js",
-  "version": "0.11.0",
-  "author": "Richard Foster",
+  "version": "0.12.0",
+  "author": "Richard Foster <richf2000@outlook.com>",
   "license": "MIT",
   "repository": "dayjur/coffeebeans",
   "dependencies": {
