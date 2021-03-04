@@ -7,7 +7,6 @@ var routes = app.router(); // get a router
 // localhost:3000 serve index.html  localhost:3000/download.png  serve png pic
 app.use(app.serveStatic('public'));
 
-
 // routes
 routes.get('/api', (req, res) => {
     app.sendText('Api');
