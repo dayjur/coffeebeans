@@ -4,28 +4,26 @@ var routes = app.router(); // get a router
 
 // set routes
 
-// render pages with html,ejs or pug defalt engine is html
+// render pages with html,ejs or pug
 
 // render html view
 routes.get('/html', (req, res) => { // localhost:3000/html
-    app.renderView('index.html', (err) => {
+    app.renderHtml('index.html', (err) => {
         if (err) {
             console.log(err);
-        }
-        else {
+        } else {
             console.log('page rendered');
         }
     });
 });
 
-// render pug view
+// render pug view 
 routes.get('/pug', (req, res) => { // localhost:3000/pug
-    app.config.viewRenderer.engine = 'pug'; // set the viewRenderer engine to pug can use 'html','pug' or 'ejs'
-    app.renderView('index.pug', (err) => {
+    var locals = { name: 'Coffeebeans' }; //  optional can pass in data
+    app.renderPug('index.pug', locals, (err) => {
         if (err) {
             console.log(err);
-        }
-        else {
+        } else {
             console.log('page rendered');
         }
     });
@@ -33,12 +31,11 @@ routes.get('/pug', (req, res) => { // localhost:3000/pug
 
 // render ejs view
 routes.get('/ejs', (req, res) => { // localhost:3000/ejs
-    app.config.viewRenderer.engine = 'ejs';
-    app.renderView('index.ejs', (err) => {
+    var locals = { name: 'coffeebeans' }; // optional pass in data
+    app.renderEjs('index.ejs', locals, (err) => {
         if (err) {
             console.log(err);
-        }
-        else {
+        } else {
             console.log('page rendered');
         }
     });

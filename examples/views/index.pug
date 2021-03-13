@@ -1,8 +1,18 @@
-doctype html  
-html(lang='en')  
- head
-   title Pug
- body
-   h1 Pug Examples
-   div.container
-     p Cool Pug example!
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    script(type='text/javascript').
+      if (foo) bar(1 + 5)
+  body
+  h1 PUG is great
+  h3
+    p  #{name} part of data passed into page
+    #container.col
+      if youAreUsingPug
+        p You are amazing
+      else
+        p Get on it!
+      p.
+        Pug is a terse and simple templating language with a
+        strong focus on performance and powerful features.
