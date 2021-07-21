@@ -1,10 +1,18 @@
 {
     "name": "coffeebeans",
-    "description": "Simple fast and easy to use web framework for node.js",
-    "version": "0.18.0",
+    "description": "An easy to use framework for serving web pages on node.js",
+    "version": "1.0.0",
     "author": "Richard Foster <richf2000@outlook.com>",
     "license": "MIT",
     "repository": "dayjur/coffeebeans",
+    "keywords":[
+        "web",
+        "http",
+        "router",
+        "rest",
+        "node framework",
+        "node.js"
+    ],
     "dependencies": {
         "ejs": "^3.1.6",
         "finalhandler": "^1.1.2",
