@@ -1,7 +1,7 @@
 {
     "name": "coffeebeans",
     "description": "An easy to use framework for serving web pages on node.js",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "author": "Richard Foster <richf2000@outlook.com>",
     "license": "MIT",
     "repository": "dayjur/coffeebeans",
@@ -20,7 +20,7 @@
         "pug": "^3.0.2",
         "router": "^1.3.5",
         "serve-static": "^1.14.1",
-        "url-parse": "^1.5.1"
+        "url-parse": ">=1.5.9"
     },
     "engines": {
         "node": ">= 0.10.0"
